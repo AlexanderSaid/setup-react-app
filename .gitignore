@@ -7,6 +7,5 @@ dist
 # Not pushing the environment variables 
 .env
 
-# Not pushing vscode settings and workspaces
-.vscode
+# Not pushing vscode workspaces
 *.code-workspace

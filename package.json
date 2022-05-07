@@ -4,7 +4,15 @@
   "description": "Learning how to set up a react project using webpack, eslint, prettier, husky and babel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "pre-commit": "npm run pre-commit:client",
+    "pre-commit:client": "cd client && npm run pre-commit && cd ..",
+    "pre-commit:server": "cd server && npm run pre-commit && cd ..",
+    "code-style-check": "npm run code-style-check:client",
+    "code-style-check:client": "cd client && npm run code-style-check && cd ..",
+    "autofix": "npm run autofix:client",
+    "autofix:client": "cd client && npm run autofix && cd .."
   },
   "author": "Alexander Said",
   "license": "ISC",
@@ -12,6 +20,6 @@
     "concurrently": "^7.1.0"
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.0"
   }
 }
