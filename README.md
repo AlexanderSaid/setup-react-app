@@ -19,6 +19,8 @@ Recording the steps to get some reviews later.
     npx husky-init && npm install
   ```
 
+- *Finally add all related scripts to `package.json`*
+
 ---
 
 > In client directory
@@ -78,6 +80,8 @@ Recording the steps to get some reviews later.
 
 - Create `.prettierrc` file.
 
+- *Finally add all related scripts to `package.json`*
+
 ---
 
 > In server directory
@@ -107,7 +111,8 @@ Recording the steps to get some reviews later.
     prettier-eslint
 
     nodemon
-    
+
+
     // Install Airbnb style guid 
 
     eslint-config-airbnb-base
@@ -115,3 +120,41 @@ Recording the steps to get some reviews later.
 
 
   ```
+
+- Create `babel.config.cjs` file.
+- Initialize eslint config file using:
+
+  ``` bash
+  npx eslint --init
+  ```
+
+- Create `.prettierrc` file.
+
+- *Finally add all related scripts to `package.json`*
+
+---
+
+### Notes
+
+- This setup doesn't use `create-react-app`.
+- This setup doesn't contain testing configurations.
+
+---
+
+### Check the code locally
+
+After cloning the repo go to main directory and run following:
+
+`npm install`
+
+`npm run setup`
+
+The first command will install some small libraries needed for running the rest of the commands. The second will go into the client and server directories and set those up to be ran.
+
+In the server directory there is `.env.example` file. Create a copy and rename that to `.env`. The port is already set, but you can choose whatever you like.
+
+To run the app in dev mode you can run the following command in the main directory:
+
+`npm run dev`
+
+This will run the server and log a message in console, and open a new browser tab on localhost:8080 .
