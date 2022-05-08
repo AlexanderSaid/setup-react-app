@@ -50,13 +50,13 @@ Recording the steps to get some reviews later.
     webpack-dev-server
     html-webpack-plugin
 
-    prettier
-
     eslint 
     eslint-plugin-prettier 
     eslint-config-prettier 
     eslint-plugin-node 
     eslint-config-node
+
+    prettier
     
     // Install Airbnb style guid 
 
@@ -74,4 +74,44 @@ Recording the steps to get some reviews later.
 
   ``` bash
   npx eslint --init
+  ```
+
+- Create `.prettierrc` file.
+
+---
+
+> In server directory
+
+- `npm init`
+- Install dependencies
+
+  ``` bash
+    cors
+    dotenv
+    express
+  ```
+
+- Install dev-dependencies
+
+  ``` bash
+
+    @babel/preset-env
+
+    eslint 
+    eslint-plugin-prettier 
+    eslint-config-prettier 
+    eslint-plugin-node 
+    eslint-config-node
+    
+    prettier
+    prettier-eslint
+
+    nodemon
+    
+    // Install Airbnb style guid 
+
+    eslint-config-airbnb-base
+    eslint-plugin-import
+
+
   ```
